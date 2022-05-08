@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@includes/*": ["_includes/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
