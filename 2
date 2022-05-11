@@ -32,13 +32,13 @@ const Home: NextPage = () => {
         <Divider />
         <Row justify="center">
           <Col xs={20} sm={16} lg={12} xxl={8}>
-            <Title level={2}>About</Title>
+            <Title level={2}>About me</Title>
             <Paragraph strong={true}>
               Software developer using Typescript to bring web applications to
               life. Experience with full-stack development using react and
               node.js web frameworks.
             </Paragraph>
-            <Title level={3}>Technologies</Title>
+            <Title level={4}>Technologies</Title>
             <Paragraph strong={true}>
               Frontend : Typescript - React - HTML5 - CSS3
             </Paragraph>
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             <div
               style={{
                 marginLeft: ' auto ',
-                width: '210px',
+                width: '215px',
                 display: 'flex',
                 justifyContent: 'space-between',
               }}
@@ -67,9 +67,7 @@ const Home: NextPage = () => {
                 </Link>
               </Button>
               <Button type="primary">
-                <Link
-                  href={`https://drive.google.com/file/d/1lyZ4Z3mdIl7UJO_-lcDx0ik_llP_RVRu/view?usp=sharing`}
-                >
+                <Link href={'/resume'}>
                   <a>Resume</a>
                 </Link>
               </Button>
@@ -84,16 +82,17 @@ const Home: NextPage = () => {
         <Row justify="center">
           <Col xs={20} sm={16} lg={12} xxl={8}>
             <Title level={2}>Services</Title>
-            <Paragraph style={{ fontSize: '16px' }} strong={true}>
+            <Title level={5}>
               Create a custom website for your business or personal brand.
-            </Paragraph>
+            </Title>
+            <Paragraph strong={true}></Paragraph>
             <Paragraph strong={true}> - Landing page</Paragraph>
             <Paragraph strong={true}> - E-Commerce</Paragraph>
             <Paragraph strong={true}> - Portfolio Website</Paragraph>
             <Paragraph strong={true}> - Business Website</Paragraph>
-            <Paragraph style={{ fontSize: '16px' }} strong={true}>
+            <Title level={5}>
               Need a bug fixed, redesign, or a new feature for your website?
-            </Paragraph>
+            </Title>
           </Col>
         </Row>
         <Row justify="center">
@@ -105,7 +104,7 @@ const Home: NextPage = () => {
             >
               <Button>
                 <Link href={'/contact'}>
-                  <a>Lets Talk!</a>
+                  <a>Get a Quote</a>
                 </Link>
               </Button>
             </div>

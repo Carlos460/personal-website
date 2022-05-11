@@ -8,7 +8,7 @@ import Header from '@includes/Header';
 import Project from '@includes/Project';
 
 // Antd Components
-import { Row, Col, Typography, Divider, Space } from 'antd';
+import { Row, Col, Typography, Divider } from 'antd';
 const { Title } = Typography;
 
 const Portfolio: NextPage = () => {
@@ -44,6 +44,8 @@ const Portfolio: NextPage = () => {
         <br />
         <br />
         <Project
+          demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
+          githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
           title={`P'Unity`}
           description={`
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam

@@ -6,6 +6,6 @@
 
 main {
   background-color: rgb(247, 247, 247);
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }

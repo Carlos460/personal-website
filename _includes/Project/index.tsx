@@ -25,14 +25,14 @@ const Project = (props: {
           <S.ButtonRow>
             {props.githubLink !== undefined ? (
               <Button>
-                <a href={`${props.githubLink}`}>Code</a>
+                <a target={`_blank`} href={`${props.githubLink}`}>Code</a>
               </Button>
             ) : (
               <Button disabled={true}>Private</Button>
             )}
             {props.demoLink !== undefined ? (
-              <Button>
-                <a href={`${props.demoLink}`}>Demo</a>
+              <Button type={`primary`}>
+                <a target={`_blank`} href={`${props.demoLink}`}>Demo</a>
               </Button>
             ) : (
               <Button disabled={true}>Offline</Button>
