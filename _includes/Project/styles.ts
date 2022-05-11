@@ -37,15 +37,15 @@ export const Content = styled.div`
 `;
 
 export const TitleRow = styled.div`
-  padding-top: 10px;
+  padding: 10px 20px 0px;
   height: 50px;
   @media (max-width: 750px) {
-    padding: 5px 20px;
+    padding: 15px 20px 0px;
   }
 `;
 
 export const DescriptionRow = styled.div`
-  padding-right: 20px;
+  padding: 0px 20px;
   height: 150px;
   overflow-y: auto;
   @media (max-width: 750px) {
