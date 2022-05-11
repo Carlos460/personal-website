@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Image = styled.div`
+export const Image = styled.img`
   width: 50%;
   height: 250px;
   @media (max-width: 750px) {

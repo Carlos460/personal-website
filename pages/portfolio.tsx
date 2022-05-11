@@ -32,6 +32,8 @@ const Portfolio: NextPage = () => {
         <br />
         <br />
         <Project
+          imageAlt={`Project card for tax-tracker`}
+          imageSrc={``}
           title={`Tax Tracker`}
           description={`
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam
@@ -46,19 +48,9 @@ const Portfolio: NextPage = () => {
         <Project
           demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
           githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
+          imageAlt={`Project card for punity`}
+          imageSrc={`project-img/punity.webp`}
           title={`P'Unity`}
-          description={`
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam
-            veritatis laboriosam temporibus, facere nihil, quisquam amet ea
-            dolorem minima id consectetur nostrum asperiores deleniti nesciunt
-            beatae aspernatur. Ducimus, enim.
-            `}
-        />
-        <br />
-        <br />
-        <br />
-        <Project
-          title={`Moonbase`}
           description={`
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam
             veritatis laboriosam temporibus, facere nihil, quisquam amet ea
