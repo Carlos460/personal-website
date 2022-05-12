@@ -68,7 +68,7 @@ const Home: NextPage = () => {
               </Button>
               <Button type="primary">
                 <Link href={`/resume`}>
-                  <a>Resume</a>
+                  <a target={`_blank`}>Resume</a>
                 </Link>
               </Button>
             </div>
