@@ -67,9 +67,7 @@ const Home: NextPage = () => {
                 </Link>
               </Button>
               <Button type="primary">
-                <Link
-                  href={`https://drive.google.com/file/d/1lyZ4Z3mdIl7UJO_-lcDx0ik_llP_RVRu/view?usp=sharing`}
-                >
+                <Link href={`/resume`}>
                   <a>Resume</a>
                 </Link>
               </Button>
