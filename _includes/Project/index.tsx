@@ -39,7 +39,7 @@ const Project = (props: IProjectProps) => {
             {props.demoLink !== undefined ? (
               <Button type={`primary`}>
                 <a target={`_blank`} href={`${props.demoLink}`}>
-                  Demo
+                  Live
                 </a>
               </Button>
             ) : (

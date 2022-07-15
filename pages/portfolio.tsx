@@ -31,19 +31,30 @@ const Portfolio: NextPage = () => {
         <Divider />
         <br />
         <br />
+        <Row justify="center">
+          <Col xs={20} sm={16} lg={12} xxl={8}>
+            <h1>Experiece</h1>
+          </Col>
+        </Row>
+        <br />
         <Project
-          imageAlt={`Project card for tax-tracker`}
-          imageSrc={``}
-          title={`Tax Tracker`}
+          imageAlt={`DD Sparkle Cleaning website`}
+          demoLink={`https://ddsparklecleaning.com/`}
+          imageSrc={`project-img/ddscclip.webp`}
+          title={`DD Sparkle Cleaning`}
           description={`
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam
-            veritatis laboriosam temporibus, facere nihil, quisquam amet ea
-            dolorem minima id consectetur nostrum asperiores deleniti nesciunt
-            beatae aspernatur. Ducimus, enim.
-            `}
+            Marketing website for a cleaning business. This website features a landing, about, services, and
+            a contact page. Written in Next.js using Typescript.
+          `}
         />
         <br />
         <br />
+        <br />
+        <Row justify="center">
+          <Col xs={20} sm={16} lg={12} xxl={8}>
+            <h1>Projects</h1>
+          </Col>
+        </Row>
         <br />
         <Project
           demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
@@ -52,10 +63,8 @@ const Portfolio: NextPage = () => {
           imageSrc={`project-img/punity.webp`}
           title={`P'Unity`}
           description={`
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam
-            veritatis laboriosam temporibus, facere nihil, quisquam amet ea
-            dolorem minima id consectetur nostrum asperiores deleniti nesciunt
-            beatae aspernatur. Ducimus, enim.
+            This collaborative fullstack project features Q&A community services.
+            I focused on implementing designs by using react. This is only a demo of the fontend part of the application
             `}
         />
         <br />

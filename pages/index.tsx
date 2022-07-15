@@ -85,8 +85,8 @@ const Home: NextPage = () => {
             <Paragraph style={{ fontSize: '16px' }} strong={true}>
               Create a custom website for your business or personal brand.
             </Paragraph>
-            <Paragraph strong={true}> - Landing page</Paragraph>
-            <Paragraph strong={true}> - E-Commerce</Paragraph>
+            <Paragraph strong={true}> - Marketing Website</Paragraph>
+            <Paragraph strong={true}> - E-Commerce Website</Paragraph>
             <Paragraph strong={true}> - Portfolio Website</Paragraph>
             <Paragraph strong={true}> - Business Website</Paragraph>
             <Paragraph style={{ fontSize: '16px' }} strong={true}>

@@ -1,7 +1,7 @@
 // Import Next
-import { NextPage } from 'next';
+import {NextPage} from 'next';
 import Head from 'next/head';
-import { useRef, useState } from 'react';
+import {useState} from 'react';
 
 // Emailjs
 import emailjs from '@emailjs/browser';
@@ -21,8 +21,8 @@ import {
   Button,
   message,
 } from 'antd';
-const { TextArea } = Input;
-const { Title } = Typography;
+const {TextArea} = Input;
+const {Title} = Typography;
 
 const messageKey = 'updatable';
 
@@ -39,7 +39,7 @@ const Contact: NextPage = () => {
   const sendEmail = async (values: any) => {
     // TS Ignore used due to antd type error?
     // @ts-ignore
-    message.loading({ content: 'Sending email...', key: messageKey });
+    message.loading({content: 'Sending email...', key: messageKey});
     if (!isContactTimeout) {
       try {
         const response = await emailjs.send(
@@ -98,19 +98,19 @@ const Contact: NextPage = () => {
             <Form name="form" autoComplete="off" onFinish={sendEmail}>
               <Form.Item
                 name={'name'}
-                rules={[{ required: true, message: 'Please input your name' }]}
+                rules={[{required: true, message: 'Please input your name'}]}
               >
                 <Input placeholder="Name" />
               </Form.Item>
               <Form.Item
                 name={'email'}
-                rules={[{ required: true, message: 'Please input your email' }]}
+                rules={[{required: true, message: 'Please input your email'}]}
               >
                 <Input placeholder="Email" />
               </Form.Item>
               <Form.Item
                 name={'message'}
-                rules={[{ required: true, message: 'Please input a message' }]}
+                rules={[{required: true, message: 'Please input a message'}]}
               >
                 <TextArea rows={10} placeholder="Message" />
               </Form.Item>
