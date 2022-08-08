@@ -21,7 +21,7 @@ const Portfolio: NextPage = () => {
       </Head>
       <main>
         <Header>
-          <Title>Software Developer Portfolio</Title>
+          <Title>Carlos Flores</Title>
         </Header>
         <Row justify="center">
           <Col span={24}>
@@ -33,10 +33,9 @@ const Portfolio: NextPage = () => {
         <br />
         <Row justify="center">
           <Col xs={20} sm={16} lg={12} xxl={8}>
-            <h1>Experiece</h1>
+            <h1 style={{ color: '#3a3a3a' }}>Contract Work</h1>
           </Col>
         </Row>
-        <br />
         <Project
           imageAlt={`DD Sparkle Cleaning website`}
           demoLink={`https://ddsparklecleaning.com/`}
@@ -52,10 +51,9 @@ const Portfolio: NextPage = () => {
         <br />
         <Row justify="center">
           <Col xs={20} sm={16} lg={12} xxl={8}>
-            <h1>Projects</h1>
+            <h1 style={{ color: '#3a3a3a' }}>Projects</h1>
           </Col>
         </Row>
-        <br />
         <Project
           demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
           githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
@@ -64,7 +62,7 @@ const Portfolio: NextPage = () => {
           title={`P'Unity`}
           description={`
             This collaborative fullstack project features Q&A community services.
-            I focused on implementing designs by using react. This is only a demo of the fontend part of the application
+            This is only a demo of the fontend part of the application
             `}
         />
         <br />

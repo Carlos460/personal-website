@@ -14,8 +14,8 @@ export const Container = styled.div`
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
-    transform: translate(0px, -5px);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 13px 15px;
+    transform: translate(0px, -2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
   }
   @media (max-width: 750px) {
     width: 350px;

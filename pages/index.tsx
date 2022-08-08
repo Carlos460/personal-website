@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
       <main>
         <Header>
-          <Title>Carlos Flores Tufino</Title>
+          <Title>Carlos Flores</Title>
         </Header>
         <Row justify="center">
           <Col span={24}>
