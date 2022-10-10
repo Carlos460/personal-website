@@ -1,5 +1,4 @@
 // Import Next
-import { NextPage } from 'next';
 import Head from 'next/head';
 import { useState } from 'react';
 
@@ -11,22 +10,12 @@ import Navbar from '@includes/Navbar';
 import Header from '@includes/Header';
 
 // Antd Components
-import {
-  Row,
-  Col,
-  Typography,
-  Divider,
-  Form,
-  Input,
-  Button,
-  message,
-} from 'antd';
+import { Row, Col, Form, Input, Button, message } from 'antd';
 const { TextArea } = Input;
-const { Title } = Typography;
 
 const messageKey = 'updatable';
 
-const Contact: NextPage = () => {
+const Contact = () => {
   const [isContactTimeout, setIsContactTimeout] = useState(false);
 
   const timeoutContact = () => {
@@ -78,23 +67,12 @@ const Contact: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Contact</title>
-        <meta name="description" content="Project List" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <Header>
-          <Title>Carlos Flores</Title>
-        </Header>
+      <div id="contact">
+        <br />
+
         <Row justify="center">
-          <Col span={24}>
-            <Navbar />
-          </Col>
-        </Row>
-        <Divider />
-        <Row justify="center">
-          <Col xs={20} sm={16} lg={12} xxl={8}>
+          <Col xs={24} sm={20} lg={14} xxl={12}>
+            <h1>Lets talk!</h1>
             <Form name="form" autoComplete="off" onFinish={sendEmail}>
               <Form.Item
                 name={'name'}
@@ -127,7 +105,7 @@ const Contact: NextPage = () => {
           </Col>
         </Row>
         <br />
-      </main>
+      </div>
     </>
   );
 };

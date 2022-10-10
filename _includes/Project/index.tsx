@@ -18,10 +18,10 @@ const Project = (props: IProjectProps) => {
   return (
     <S.Wrapper>
       <S.Container>
-        <S.Image src={`${props.imageSrc}`} alt={`${props.imageAlt}`} />
+        <S.Image imgSrc={`${props.imageSrc}`}/>
         <S.Content>
           <S.TitleRow>
-            <Title level={3}>{props.title}</Title>
+            <Title level={2}>{props.title}</Title>
           </S.TitleRow>
           <S.DescriptionRow>
             <Paragraph>{props.description}</Paragraph>

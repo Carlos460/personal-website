@@ -4,46 +4,61 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 5px 0px 100px;
 `;
 
 export const Container = styled.div`
-  width: 700px;
-
+  width: 800px;
   display: flex;
   flex-direction: row;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  &:hover {
-    transform: translate(0px, -2px);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
-  }
   @media (max-width: 750px) {
-    width: 350px;
-
+    width: 100%;
     flex-direction: column;
   }
 `;
 
-export const Image = styled.img`
-  width: 50%;
-  height: 250px;
+interface ImageProps {
+  imgSrc: string;
+}
+
+export const Image = styled.div<ImageProps>`
+  background-image: url(${props => props.imgSrc});
+  background-position: center;
+  background-size: cover;
+
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
   @media (max-width: 750px) {
+    max-width: none;
+    max-height: none;
     width: 100%;
+    height: 400px;
+  }
+  @media (max-width: 675px) {
+    height: 375px;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+    height: 350px;
   }
 `;
 
 export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+
   width: 50%;
-  height: 250px;
+  height: 300px;
   @media (max-width: 750px) {
     width: 100%;
-    height: 275px;
+    height: 220px;
   }
 `;
 
 export const TitleRow = styled.div`
   padding: 10px 20px 0px;
-  height: 50px;
   @media (max-width: 750px) {
     padding: 15px 20px 0px;
   }
@@ -51,10 +66,8 @@ export const TitleRow = styled.div`
 
 export const DescriptionRow = styled.div`
   padding: 0px 20px;
-  height: 150px;
   overflow-y: auto;
   @media (max-width: 750px) {
-    height: 175px;
     padding: 5px 20px;
   }
 `;
@@ -63,6 +76,7 @@ export const ButtonRow = styled.div`
   width: 100%;
   height: 50px;
 
+  margin: auto 0px 0px;
   display: flex;
   justify-content: right;
   & > button {
