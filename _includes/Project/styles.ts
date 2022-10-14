@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 5px 0px 100px;
+  margin: 50px 0px 50px;
 `;
 
 export const Container = styled.div`
@@ -23,7 +23,7 @@ interface ImageProps {
 }
 
 export const Image = styled.div<ImageProps>`
-  background-image: url(${props => props.imgSrc});
+  background-image: url(${(props) => props.imgSrc});
   background-position: center;
   background-size: cover;
 
@@ -50,7 +50,7 @@ export const Content = styled.div`
   flex-direction: column;
 
   width: 50%;
-  height: 300px;
+  height: 100%;
   @media (max-width: 750px) {
     width: 100%;
     height: 220px;

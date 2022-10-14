@@ -1,13 +1,8 @@
 // Import Next
-import Head from 'next/head';
 import { useState } from 'react';
 
 // Emailjs
 import emailjs from '@emailjs/browser';
-
-// Custom Components
-import Navbar from '@includes/Navbar';
-import Header from '@includes/Header';
 
 // Antd Components
 import { Row, Col, Form, Input, Button, message } from 'antd';
