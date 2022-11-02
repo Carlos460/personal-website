@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+:root {
+  --orange: #ff8b00;
+  --grey: #929292;
 }
 
 main {
-  background-color: rgb(247, 247, 247);
+  background-color: #222222;
   width: 100%;
   min-height: 100vh;
 }

@@ -1,16 +1,15 @@
 // Next Import
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 
 // Custom Components
-import Navbar from '@includes/Navbar';
 import Project from '@includes/Project';
 
 // AntD Components
-import { Row, Col, Typography, Divider, Button } from 'antd';
+import { Row, Col, Typography, Divider } from 'antd';
 import Contact from '@includes/Contact';
-const { Title, Paragraph } = Typography;
+import Header from '@includes/Header';
+const { Paragraph } = Typography;
 
 const Home: NextPage = () => {
   return (
@@ -22,60 +21,65 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Row justify="center">
-          <Col xs={20} sm={18} lg={16} xxl={10}>
-            <Navbar />
-          </Col>
-        </Row>
-        <Row justify="center">
-          <Col xs={20} sm={18} lg={16} xxl={10}>
-            <Title level={1}>Software Developer</Title>
-            <Paragraph>
-            Specializing in web development.
-            </Paragraph>
-            <Paragraph>Technologies : Javasript - Typescript - React</Paragraph>
-            <Paragraph>Interests: Python - Three.js - C++</Paragraph>
-          </Col>
-        </Row>
-        <Row justify="center">
-          <Col xs={20} sm={18} lg={16} xxl={10}>
-            <Divider />
-          </Col>
-        </Row>
-        <br />
-        <Row justify="center">
-          <Col xs={20} sm={18} lg={16} xxl={10}>
-            <h1 style={{ color: '#c0c0c0' }}>Portfolio</h1>
-            <Project
-              imageAlt={`DD Sparkle Cleaning website`}
-              demoLink={`https://ddsparklecleaning.com/`}
-              imageSrc={`project-img/ddscclip.webp`}
-              title={`DD Sparkle Cleaning`}
-              description={`
+          <Col xs={20} sm={18} lg={18} xxl={12}>
+            <div style={{ display: 'flex', width: '100%' }}>
+              <div style={{ maxWidth: '1400px', margin: ' 0px auto' }}>
+                <Header />
+                <h1
+                  style={{ color: '#c0c0c0', fontSize: '20px', margin: '0px' }}
+                >
+                  Portfolio
+                </h1>
+                <h1
+                  style={{
+                    color: 'var(--orange)',
+                    fontSize: '28px',
+                    fontWeight: '600',
+                  }}
+                >
+                  Contract Work
+                </h1>
+                <Project
+                  imageAlt={`DD Sparkle Cleaning website`}
+                  githubLink={`https://github.com/Carlos460/dd-sparkle-cleaning.git`}
+                  demoLink={`https://ddsparklecleaning.com/`}
+                  imageSrc={`project-img/ddscclip.webp`}
+                  title={`DD Sparkle Cleaning`}
+                  description={`
             Marketing website for a cleaning business. This website features a landing, about, services, and
             a contact page. Written in Next.js using Typescript.
           `}
-            />
-            <Project
-              demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
-              githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
-              imageAlt={`Project card for punity`}
-              imageSrc={`project-img/punity.webp`}
-              title={`P'Unity`}
-              description={`
+                />
+                <h1
+                  style={{
+                    color: 'var(--orange)',
+                    fontSize: '28px',
+                    fontWeight: '600',
+                  }}
+                >
+                  Technical Projects
+                </h1>
+                <Project
+                  demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
+                  githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
+                  imageAlt={`Project card for punity`}
+                  imageSrc={`project-img/punity.webp`}
+                  title={`P'Unity`}
+                  description={`
             This collaborative fullstack project features Q&A community services.
             This is only a demo of the fontend part of the application
             `}
-            />
+                />
+                <h1
+                  style={{ color: '#c0c0c0', fontSize: '20px', margin: '0px' }}
+                >
+                  Contact
+                </h1>
+                <Contact />
+              </div>
+            </div>
           </Col>
         </Row>
-        <Row justify="center">
-          <Col xs={20} sm={18} lg={16} xxl={10}>
-            <Divider />
-            <h1 style={{ color: '#c0c0c0' }}>Contact</h1>
-            <Contact />
-          </Col>
-        </Row>
-        <br />
       </main>
     </div>
   );

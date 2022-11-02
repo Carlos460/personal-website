@@ -18,7 +18,11 @@ const Project = (props: IProjectProps) => {
   return (
     <S.Wrapper>
       <S.Container>
-        <S.Image imgSrc={`${props.imageSrc}`}/>
+        <S.Image href={props.demoLink} imgSrc={`${props.imageSrc}`}>
+          <S.ImageLink>
+            <h1>Visit Website</h1>
+          </S.ImageLink>
+        </S.Image>
         <S.Content>
           <S.TitleRow>
             <Title level={2}>{props.title}</Title>
@@ -28,22 +32,11 @@ const Project = (props: IProjectProps) => {
           </S.DescriptionRow>
           <S.ButtonRow>
             {props.githubLink !== undefined ? (
-              <Button>
-                <a target={`_blank`} href={`${props.githubLink}`}>
-                  Code
-                </a>
-              </Button>
+              <a target={`_blank`} href={`${props.githubLink}`}>
+                <S.Button>Code</S.Button>
+              </a>
             ) : (
-              <Button disabled={true}>Private</Button>
-            )}
-            {props.demoLink !== undefined ? (
-              <Button type={`primary`}>
-                <a target={`_blank`} href={`${props.demoLink}`}>
-                  Live
-                </a>
-              </Button>
-            ) : (
-              <Button disabled={true}>Offline</Button>
+              <S.Button disabled={true}>Private</S.Button>
             )}
           </S.ButtonRow>
         </S.Content>
