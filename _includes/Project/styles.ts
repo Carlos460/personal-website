@@ -1,18 +1,17 @@
-import { PropertySafetyFilled } from '@ant-design/icons';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 50px 0px 80px;
+  margin: 20px 0px 80px;
 `;
 
 export const Container = styled.div`
   width: 800px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   @media (max-width: 1000px) {
     width: 100%;

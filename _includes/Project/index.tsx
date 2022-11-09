@@ -2,7 +2,7 @@
 import * as S from './styles';
 
 // Import antd
-import { Button, Typography } from 'antd';
+import { Typography } from 'antd';
 const { Title, Paragraph } = Typography;
 
 interface IProjectProps {

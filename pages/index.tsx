@@ -9,7 +9,6 @@ import Project from '@includes/Project';
 import { Row, Col, Typography, Divider } from 'antd';
 import Contact from '@includes/Contact';
 import Header from '@includes/Header';
-const { Paragraph } = Typography;
 
 const Home: NextPage = () => {
   return (
