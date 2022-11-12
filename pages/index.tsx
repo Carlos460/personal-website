@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Project from '@includes/Project';
 
 // AntD Components
-import { Row, Col, Typography, Divider } from 'antd';
+import { Row, Col } from 'antd';
 import Contact from '@includes/Contact';
 import Header from '@includes/Header';
 
