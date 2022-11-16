@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -21,9 +21,28 @@ export const Container = styled.div`
 
 interface ImageProps {
   imgSrc: string;
+  delay: string;
+  count: string;
 }
 
+const pulse = keyframes`
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+	}
+`;
+
 export const Image = styled.a<ImageProps>`
+  animation: 2000ms ${pulse};
+  animation-iteration-count: ${(props) => props.count};
+  animation-delay: ${(props) => props.delay};
   background-image: url(${(props) => props.imgSrc});
   background-position: center;
   background-size: cover;
@@ -53,7 +72,7 @@ export const Image = styled.a<ImageProps>`
 `;
 
 export const ImageLink = styled.div`
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
   height: 100%;
   transition: opacity 0.2s ease;
@@ -66,7 +85,7 @@ export const ImageLink = styled.div`
     width: 100%;
     margin: 0px;
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     transform: translateY(25px);
     transition: transform 0.3s ease;
   }

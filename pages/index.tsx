@@ -39,6 +39,7 @@ const Home: NextPage = () => {
                   Contract Work
                 </h1>
                 <Project
+                  delay="1000ms"
                   imageAlt={`DD Sparkle Cleaning website`}
                   githubLink={`https://github.com/Carlos460/dd-sparkle-cleaning.git`}
                   demoLink={`https://ddsparklecleaning.com/`}
@@ -59,6 +60,7 @@ const Home: NextPage = () => {
                   Technical Projects
                 </h1>
                 <Project
+                  delay={`1300ms`}
                   demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
                   githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
                   imageAlt={`Project card for punity`}
