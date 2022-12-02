@@ -12,19 +12,13 @@ interface IProjectProps {
   imageAlt: string;
   title: string;
   description: string;
-  delay: string;
 }
 
 const Project = (props: IProjectProps) => {
   return (
     <S.Wrapper>
       <S.Container>
-        <S.Image
-          href={props.demoLink}
-          imgSrc={props.imageSrc}
-          delay={props.delay}
-          count={`${props.demoLink === undefined ? 0 : 3}`}
-        >
+        <S.Image href={props.demoLink} imgSrc={props.imageSrc}>
           <S.ImageLink>
             <h1>Visit Website</h1>
           </S.ImageLink>

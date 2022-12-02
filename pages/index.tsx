@@ -39,16 +39,15 @@ const Home: NextPage = () => {
                   Contract Work
                 </h1>
                 <Project
-                  delay="1000ms"
                   imageAlt={`DD Sparkle Cleaning website`}
                   githubLink={`https://github.com/Carlos460/dd-sparkle-cleaning.git`}
                   demoLink={`https://ddsparklecleaning.com/`}
                   imageSrc={`project-img/ddscclip.webp`}
                   title={`DD Sparkle Cleaning`}
                   description={`
-            Marketing website for a cleaning business. This website features a landing, about, services, and
-            a contact page. Written in Next.js using Typescript.
-          `}
+                    Marketing website for a cleaning business. This website features a landing, about, services, and
+                    a contact page. Written in Next.js using Typescript.
+                  `}
                 />
                 <h1
                   style={{
@@ -60,7 +59,6 @@ const Home: NextPage = () => {
                   Technical Projects
                 </h1>
                 <Project
-                  delay={`1300ms`}
                   demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
                   githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
                   imageAlt={`Project card for punity`}

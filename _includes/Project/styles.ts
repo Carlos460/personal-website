@@ -21,28 +21,9 @@ export const Container = styled.div`
 
 interface ImageProps {
   imgSrc: string;
-  delay: string;
-  count: string;
 }
 
-const pulse = keyframes`
-	0% {
-		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-	}
-
-	70% {
-		box-shadow: 0 0 0 10px rgba(255,255,255, 0);
-	}
-
-	100% {
-		box-shadow: 0 0 0 0 rgba(255,255,255, 0);
-	}
-`;
-
 export const Image = styled.a<ImageProps>`
-  animation: 2000ms ${pulse};
-  animation-iteration-count: ${(props) => props.count};
-  animation-delay: ${(props) => props.delay};
   background-image: url(${(props) => props.imgSrc});
   background-position: center;
   background-size: cover;
