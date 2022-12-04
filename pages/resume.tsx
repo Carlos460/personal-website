@@ -14,7 +14,7 @@ const Resume: NextPage = () => {
         height={`100%`}
         width={`100%`}
         style={{ position: 'absolute' }}
-        src="Resume_2022.pdf"
+        src="Resume.pdf"
         type="application/pdf"
       />
       ;
