@@ -17,6 +17,9 @@ export const Container = styled.div`
     width: 100%;
     flex-direction: column;
   }
+  &:hover > div > div > a > h2 {
+    text-decoration: underline;
+  }
 `;
 
 interface ImageProps {
@@ -66,7 +69,7 @@ export const ImageLink = styled.div`
     width: 100%;
     margin: 0px;
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     transform: translateY(25px);
     transition: transform 0.3s ease;
   }
@@ -75,6 +78,7 @@ export const ImageLink = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 10px;
 
   width: 50%;
   height: 100%;
@@ -85,9 +89,11 @@ export const Content = styled.div`
 `;
 
 export const TitleRow = styled.div`
-  padding: 10px 0px 0px;
-  & > h2 {
+  display: flex;
+  & > a > h2 {
     color: var(--orange);
+    margin: 0px;
+    font-size: 28px;
   }
 `;
 

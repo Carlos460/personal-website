@@ -39,14 +39,15 @@ const Home: NextPage = () => {
                   Contract Work
                 </h1>
                 <Project
+                  imageContnet="Next.js - Styled Components"
                   imageAlt={`DD Sparkle Cleaning website`}
                   githubLink={`https://github.com/Carlos460/dd-sparkle-cleaning.git`}
                   demoLink={`https://ddsparklecleaning.com/`}
                   imageSrc={`project-img/ddscclip.webp`}
                   title={`DD Sparkle Cleaning`}
                   description={`
-                    Marketing website for a cleaning business. This website features a landing, about, services, and
-                    a contact page. Written in Next.js using Typescript.
+                    Marketing website featuring a landing, about, services, and
+                    contact page. Written in Next.js using Typescript.
                   `}
                 />
                 <h1
@@ -59,6 +60,7 @@ const Home: NextPage = () => {
                   Technical Projects
                 </h1>
                 <Project
+                  imageContnet="React.js - Styled Components"
                   demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
                   githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
                   imageAlt={`Project card for punity`}
@@ -66,7 +68,7 @@ const Home: NextPage = () => {
                   title={`P'Unity`}
                   description={`
             This collaborative fullstack project features Q&A community services.
-            This is only a demo of the fontend part of the application
+            This is only a demo of the fontend part of the application.
             `}
                 />
                 <h1

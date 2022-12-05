@@ -17,10 +17,8 @@ const Header = () => {
           Software Developer
         </S.Title>
         <S.SubTitle>Full-Stack / React.js / Javascript-Typescript</S.SubTitle>
-        <Link href={'/resume'}>
-          <a target={'_blank'} rel={'noreferrer'}>
-            <S.Button>Resume</S.Button>
-          </a>
+        <Link target={'_blank'} href={'/resume'} passHref>
+          <S.Button>Resume</S.Button>
         </Link>
         <S.IconList>
           <S.IconLink>

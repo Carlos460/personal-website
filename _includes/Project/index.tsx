@@ -12,6 +12,7 @@ interface IProjectProps {
   imageAlt: string;
   title: string;
   description: string;
+  imageContnet: string;
 }
 
 const Project = (props: IProjectProps) => {
@@ -20,12 +21,14 @@ const Project = (props: IProjectProps) => {
       <S.Container>
         <S.Image href={props.demoLink} imgSrc={props.imageSrc}>
           <S.ImageLink>
-            <h1>Visit Website</h1>
+            <h1>{props.imageContnet}</h1>
           </S.ImageLink>
         </S.Image>
         <S.Content>
           <S.TitleRow>
-            <Title level={2}>{props.title}</Title>
+            <a href={props.demoLink}>
+              <Title level={2}>{props.title}</Title>
+            </a>
           </S.TitleRow>
           <S.DescriptionRow>
             <Paragraph>{props.description}</Paragraph>
