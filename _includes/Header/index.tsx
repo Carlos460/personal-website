@@ -16,7 +16,7 @@ const Header = () => {
           <br />
           Software Developer
         </S.Title>
-        <S.SubTitle>Full-Stack / React.js / Javascript-Typescript</S.SubTitle>
+        <S.SubTitle>Full-Stack / Javascript-Typescript</S.SubTitle>
         <Link target={'_blank'} href={'/resume'} passHref>
           <S.Button>Resume</S.Button>
         </Link>

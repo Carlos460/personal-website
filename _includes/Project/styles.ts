@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px 0px 80px;
+  margin: 5px 0px 80px;
 `;
 
 export const Container = styled.div`
@@ -16,9 +16,6 @@ export const Container = styled.div`
   @media (max-width: 1000px) {
     width: 100%;
     flex-direction: column;
-  }
-  &:hover > div > div > a > h2 {
-    text-decoration: underline;
   }
 `;
 
@@ -69,7 +66,7 @@ export const ImageLink = styled.div`
     width: 100%;
     margin: 0px;
     color: white;
-    font-size: 25px;
+    font-size: 32px;
     transform: translateY(25px);
     transition: transform 0.3s ease;
   }
@@ -78,7 +75,7 @@ export const ImageLink = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 0px 4px;
 
   width: 50%;
   height: 100%;
@@ -90,10 +87,12 @@ export const Content = styled.div`
 
 export const TitleRow = styled.div`
   display: flex;
-  & > a > h2 {
+  margin-bottom: 16px;
+  & > h2 {
     color: var(--orange);
     margin: 0px;
     font-size: 28px;
+    text-decoration: underline;
   }
 `;
 
@@ -107,11 +106,8 @@ export const DescriptionRow = styled.div`
 
 export const ButtonRow = styled.div`
   width: 100%;
-  height: 50px;
 
   margin: auto 0px 0px;
-  display: flex;
-  justify-content: right;
   & > button {
     margin: 5px 20px 0px 0px;
   }
@@ -121,23 +117,28 @@ export const ButtonRow = styled.div`
 `;
 
 export const Button = styled.button<{ disabled?: boolean }>`
-  height: 40px;
-  width: 130px;
+  height: 50px;
+  width: 100%;
+  margin: 0px 0px 0px;
+
   background-color: transparent;
   color: ${(props) => (props.disabled ? `var(--grey)` : `var(--orange)`)};
   border: solid 2px
     ${(props) => (props.disabled ? `var(--grey)` : `var(--orange)`)};
   text-decoration: none;
   outline: none;
-  margin: 0px 0px 0px;
 
+  text-align: center;
+  vertical-align: center;
   font-size: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
   &:hover {
-    width: 145px;
+    color: white;
+    border-color: white;
   }
   &:active {
-    width: 135px;
+    color: var(--orange);
+    border-color: var(--orange);
   }
 `;

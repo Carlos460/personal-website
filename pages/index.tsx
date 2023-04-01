@@ -34,9 +34,10 @@ const Home: NextPage = () => {
                     color: 'var(--orange)',
                     fontSize: '28px',
                     fontWeight: '600',
+                    margin: '0px 0px 5px',
                   }}
                 >
-                  Contract Work
+                  Recent Projects
                 </h1>
                 <Project
                   imageContnet="Next.js - Styled Components"
@@ -47,18 +48,9 @@ const Home: NextPage = () => {
                   title={`DD Sparkle Cleaning`}
                   description={`
                     Marketing website featuring a landing, about, services, and
-                    contact page. Written in Next.js using Typescript.
+                    contact page. Using Next.js with Typescript.
                   `}
                 />
-                <h1
-                  style={{
-                    color: 'var(--orange)',
-                    fontSize: '28px',
-                    fontWeight: '600',
-                  }}
-                >
-                  Technical Projects
-                </h1>
                 <Project
                   imageContnet="React.js - Styled Components"
                   demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
@@ -68,13 +60,23 @@ const Home: NextPage = () => {
                   title={`P'Unity`}
                   description={`
             This collaborative fullstack project features Q&A community services.
-            This is only a demo of the fontend part of the application.
+            This is a live demo of the work I contriubuted using React.js and Bootstrap.
             `}
                 />
                 <h1
                   style={{ color: '#c0c0c0', fontSize: '20px', margin: '0px' }}
                 >
                   Contact
+                </h1>
+                <h1
+                  style={{
+                    color: 'var(--orange)',
+                    fontSize: '28px',
+                    fontWeight: '600',
+                    margin: '0px 0px 5px',
+                  }}
+                >
+                  Get in Touch!
                 </h1>
                 <Contact />
               </div>

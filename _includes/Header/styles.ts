@@ -53,11 +53,13 @@ export const Button = styled.button`
 
   font-size: 24px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
   &:hover {
-    width: 170px;
+    color: white;
+    border-color: white;
   }
   &:active {
-    width: 160px;
+    color: var(--orange);
+    border-color: var(--orange);
   }
 `;

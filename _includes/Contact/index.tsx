@@ -65,7 +65,6 @@ const Contact = () => {
   return (
     <>
       <div id="contact">
-        <S.Title>Get in Touch!</S.Title>
         <Form name="form" autoComplete="off" onFinish={sendEmail}>
           <Form.Item
             name={'name'}

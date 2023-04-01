@@ -40,11 +40,13 @@ export const Button = styled.button`
   font-size: 24px;
   border-radius: 2px;
   cursor: pointer;
-  transition: width 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
   &:hover {
-    width: 270px;
+    color: white;
+    border-color: white;
   }
   &:active {
-    width: 260px;
+    color: var(--orange);
+    border-color: var(--orange);
   }
 `;
