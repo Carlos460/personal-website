@@ -44,7 +44,7 @@ const Home: NextPage = () => {
                   imageAlt={`DD Sparkle Cleaning website`}
                   githubLink={`https://github.com/Carlos460/dd-sparkle-cleaning.git`}
                   demoLink={`https://ddsparklecleaning.com/`}
-                  imageSrc={`project-img/ddscclip.webp`}
+                  imageSrc={`/project-img/ddscclip.webp`}
                   title={`DD Sparkle Cleaning`}
                   description={`
                     Marketing website featuring a landing, about, services, and
@@ -56,11 +56,12 @@ const Home: NextPage = () => {
                   demoLink={`https://delicate-sfogliatella-00a164.netlify.app`}
                   githubLink={`https://github.com/Carlos460/punity-frontend-demo`}
                   imageAlt={`Project card for punity`}
-                  imageSrc={`project-img/punity.webp`}
+                  imageSrc={`/project-img/punity.webp`}
                   title={`P'Unity`}
                   description={`
-            This collaborative fullstack project features Q&A community services.
-            This is a live demo of the work I contriubuted using React.js and Bootstrap.
+                  A collaborative full-stack project that offers Q&A messaging services.
+                  This demo features my code contribution I implemented from a design to 
+                  create a responsive front-end application using React.js and Bootstrap.
             `}
                 />
                 <h1

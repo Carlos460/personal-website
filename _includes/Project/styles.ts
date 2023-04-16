@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -19,49 +19,50 @@ export const Container = styled.div`
   }
 `;
 
-interface ImageProps {
-  imgSrc: string;
-}
-
-export const Image = styled.a<ImageProps>`
-  background-image: url(${(props) => props.imgSrc});
-  background-position: center;
-  background-size: cover;
-
+export const ImageWrapper = styled.a`
+  position: relative;
   width: 650px;
   height: 350px;
   border-radius: 2px;
+
   @media (max-width: 1000px) {
     max-width: none;
     max-height: none;
     width: 100%;
     height: 500px;
   }
+
   @media (max-width: 675px) {
     height: 375px;
   }
+
   @media (max-width: 400px) {
     width: 100%;
     height: 350px;
   }
+
   &:hover > div {
     opacity: 1;
   }
+
   &:hover > div > h1 {
     transform: translateY(0px);
   }
 `;
 
 export const ImageLink = styled.div`
-  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
   width: 100%;
   height: 100%;
+
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
   transition: opacity 0.2s ease;
   opacity: 0;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   & > h1 {
     width: 100%;
     margin: 0px;
@@ -87,7 +88,7 @@ export const Content = styled.div`
 
 export const TitleRow = styled.div`
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   & > h2 {
     color: var(--orange);
     margin: 0px;

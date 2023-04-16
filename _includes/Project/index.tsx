@@ -5,6 +5,8 @@ import * as S from './styles';
 import { Typography } from 'antd';
 const { Title, Paragraph } = Typography;
 
+import Image from 'next/image';
+
 interface IProjectProps {
   githubLink?: string;
   demoLink?: string;
@@ -19,15 +21,12 @@ const Project = (props: IProjectProps) => {
   return (
     <S.Wrapper>
       <S.Container>
-        <S.Image
-          target={`_blank`}
-          href={props.demoLink}
-          imgSrc={props.imageSrc}
-        >
+        <S.ImageWrapper target={`_blank`} href={props.demoLink}>
+          <Image src={props.imageSrc} alt="website demo" fill />
           <S.ImageLink>
             <h1>Live Website</h1>
           </S.ImageLink>
-        </S.Image>
+        </S.ImageWrapper>
         <S.Content>
           <S.TitleRow>
             <Title level={2}>{props.title}</Title>

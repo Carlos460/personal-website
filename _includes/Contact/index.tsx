@@ -5,8 +5,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 // Antd Components
-import { Row, Col, Form, Input, Button, message } from 'antd';
-const { TextArea } = Input;
+import { Form, message } from 'antd';
 
 import * as S from './styles';
 
