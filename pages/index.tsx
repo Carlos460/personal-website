@@ -17,18 +17,18 @@ const projects = [
                contact page. Using Next.js with Typescript.`,
     imageDescription: 'cleaning service website',
     imageSource: '/project-img/ddscclip.webp',
-    githubLink: 'https://webflow.com/templates/tag/portfolio-websites',
+    githubLink: 'https://github.com/Carlos460/dd-sparkle-cleaning',
     websiteLink: 'https://ddsparklecleaning.com/',
   },
   {
-    title: `P'Unitg`,
+    title: `P'Unity`,
     description: `A collaborative full-stack project that offers Q&A messaging services.
                This demo features my code contribution I implemented from a design to 
                create a responsive front-end application using React.js and Bootstrap..`,
     imageDescription: 'Q&A community website',
     imageSource: '/project-img/punity.webp',
-    githubLink: 'https://github.com/Carlos460/punity-frontend-dems',
-    websiteLink: 'https://delicate-sfogliatella-00a164.netlify.ap/',
+    githubLink: 'https://github.com/Carlos460/punity-frontend',
+    websiteLink: 'https://delicate-sfogliatella-00a164.netlify.app/',
   },
 ];
 
