@@ -24,7 +24,7 @@ const projects = [
     title: `P'Unity`,
     description: `A collaborative full-stack project that offers Q&A messaging services.
                This demo features my code contribution I implemented from a design to 
-               create a responsive front-end application using React.js and Bootstrap..`,
+               create a responsive front-end application using React.js and Bootstrap.`,
     imageDescription: 'Q&A community website',
     imageSource: '/project-img/punity.webp',
     githubLink: 'https://github.com/Carlos460/punity-frontend',

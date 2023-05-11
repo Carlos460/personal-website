@@ -16,18 +16,33 @@ export const Container = styled.div`
 export const Title = styled.h1`
   color: white;
   margin: 0px;
-  font-size: 45px;
-  line-height: 50px;
-  letter-spacing: 1px;
+  font-size: 36px;
+  line-height: 36px;
+  max-width: 600px;
   @media (max-width: 700px) {
-    font-size: 38px;
+    font-size: 20px;
   }
 `;
 
-export const SubTitle = styled.h2`
-  color: var(--grey);
-  font-size: 20px;
-`;
+export const SkillList = styled.ul`
+  display: flex;
+  list-style: none;
+  gap: 10px;
+`
+
+export const SkillIcon = styled.div`
+  color: #f5f5f5;
+  font-size: 16px;
+  padding: 5px;
+  margin: 15px 0px 0px;
+  border-radius: 5px;
+  background-color: var(--orange);
+  transition: transform 200ms ease;
+  cursor: default;
+  &:hover {
+    transform: translateY(-10px);
+  }
+`
 
 export const IconList = styled.ul`
   margin: 15px 0px 0px;
@@ -38,7 +53,7 @@ export const IconList = styled.ul`
 
 export const IconLink = styled.li`
   & > *:hover {
-    color: var('--orange');
+    color: var(--orange);
   }
 `;
 

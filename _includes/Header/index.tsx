@@ -12,11 +12,18 @@ const Header = () => {
     <S.Wrapper>
       <S.Container>
         <S.Title>
-          My name is Carlos.
+          I'm Carlos Flores Tufiño, a Software Engineer specialized in
+          full-stack development.
           <br />
-          Software Developer
         </S.Title>
-        <S.SubTitle>Full-Stack / Javascript-Typescript</S.SubTitle>
+        <S.SkillList>
+          <S.SkillIcon>Typescript</S.SkillIcon>
+          <S.SkillIcon>JavaScript</S.SkillIcon>
+          <S.SkillIcon>Next.js</S.SkillIcon>
+          <S.SkillIcon>Java</S.SkillIcon>
+          <S.SkillIcon>Spring</S.SkillIcon>
+          <S.SkillIcon>Python</S.SkillIcon>
+        </S.SkillList>
         <Link target={'_blank'} href={'/resume'} passHref>
           <S.Button>Resume</S.Button>
         </Link>
