@@ -12,10 +12,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   gap: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 300ms ease;
   @media (max-width: 1000px) {
     width: 100%;
     flex-direction: column;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.15);
   }
 `;
 
@@ -23,7 +28,8 @@ export const ImageWrapper = styled.a`
   position: relative;
   width: 650px;
   height: 350px;
-  border-radius: 2px;
+  border-radius: 5px;
+  overflow: hidden;
 
   @media (max-width: 1000px) {
     max-width: none;
@@ -40,36 +46,12 @@ export const ImageWrapper = styled.a`
     width: 100%;
     height: 350px;
   }
-
-  &:hover > div {
-    opacity: 1;
+  & > img {
+    transition: transform 400ms ease;
   }
 
-  &:hover > div > h1 {
-    transform: translateY(0px);
-  }
-`;
-
-export const ImageLink = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
-  transition: opacity 0.2s ease;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  & > h1 {
-    width: 100%;
-    margin: 0px;
-    color: white;
-    font-size: 32px;
-    transform: translateY(25px);
-    transition: transform 0.3s ease;
+  &:hover > img {
+    transform: scale(1.05);
   }
 `;
 
@@ -92,14 +74,14 @@ export const TitleRow = styled.div`
   & > h2 {
     color: var(--orange);
     margin: 0px;
-    font-size: 28px;
+    font-size: 22px;
     text-decoration: underline;
   }
 `;
 
 export const DescriptionRow = styled.div`
   overflow-y: auto;
-  font-size: 17px;
+  font-size: 16px;
   & > div {
     color: var(--grey);
   }
@@ -122,6 +104,7 @@ export const Button = styled.button<{ disabled?: boolean }>`
   width: 100%;
   margin: 0px 0px 0px;
 
+  border-radius: 5px;
   background-color: transparent;
   color: ${(props) => (props.disabled ? `var(--grey)` : `var(--orange)`)};
   border: solid 2px

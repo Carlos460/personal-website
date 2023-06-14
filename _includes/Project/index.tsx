@@ -22,9 +22,6 @@ const Project = (props: IProjectProps) => {
       <S.Container>
         <S.ImageWrapper target={`_blank`} href={props.websiteLink}>
           <Image src={props.imageSource} alt="website demo" fill />
-          <S.ImageLink>
-            <h1>Live Website</h1>
-          </S.ImageLink>
         </S.ImageWrapper>
         <S.Content>
           <S.TitleRow>

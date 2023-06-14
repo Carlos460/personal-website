@@ -16,9 +16,10 @@ export const Container = styled.div`
 export const Title = styled.h1`
   color: white;
   margin: 0px;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 36px;
   max-width: 600px;
+  font-weight: 300;
   @media (max-width: 700px) {
     font-size: 20px;
   }
@@ -28,21 +29,21 @@ export const SkillList = styled.ul`
   display: flex;
   list-style: none;
   gap: 10px;
-`
+`;
 
 export const SkillIcon = styled.div`
-  color: #f5f5f5;
+  color: #fafafa;
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 15px 0px 0px;
   border-radius: 5px;
   background-color: var(--orange);
-  transition: transform 200ms ease;
+  transition: transform 300ms ease;
   cursor: default;
   &:hover {
-    transform: translateY(-10px);
+    transform: translateY(-4px);
   }
-`
+`;
 
 export const IconList = styled.ul`
   margin: 15px 0px 0px;
